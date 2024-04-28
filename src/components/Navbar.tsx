@@ -103,8 +103,7 @@ const Navbar = () => {
             <Link onClick={toggleMenu} to="/" className="block py-2">Home</Link>
             <Link onClick={toggleMenu} to="/about" className="block py-2">About</Link>
             <Link onClick={toggleMenu} to="/services" className="block py-2">Services</Link>
-            <Link onClick={toggleMenu} to="/doctors" className="block py-2">Doctors</Link>
-            <Link onClick={toggleMenu} to="/nurses" className="block py-2">Nurses</Link>
+            <Link onClick={toggleMenu} to="/team" className="block py-2">Doctors</Link>
             <Link onClick={toggleMenu} to="/departments" className="block py-2">Departments</Link>
             <Link onClick={toggleMenu} to="/contact" className="block py-2">Contact</Link>
           </div>
