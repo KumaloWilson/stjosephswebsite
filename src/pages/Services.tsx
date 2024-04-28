@@ -109,8 +109,6 @@ const Services = () => {
 
   return (
     <div>
-
-
       <div className="flex flex-col items-center bg-gray-200 px-72">
         <div className="text-center mt-20">
           <h2 className="text-4xl font-extrabold text-black">OUR <span className="text-blue-700">SERVICES</span></h2>
