@@ -3,10 +3,9 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import AboutUs from "./pages/AboutUs"
-import Doctors from "./pages/Doctors"
+import Teams from "./pages/Teams"
 import ContactMe from "./pages/ContactMe"
 import Services from "./pages/Services"
-import Nurses from "./pages/Nurses"
 import Departments from "./pages/Departments"
 
 
@@ -21,8 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/doctors" element={<Doctors />} />
-          <Route path="/nurses" element={<Nurses />} />
+          <Route path="/team" element={<Teams />} />
           <Route path="/departments" element={<Departments />} />
           <Route path="/contact" element={<ContactMe />} />
         </Routes>

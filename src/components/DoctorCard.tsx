@@ -1,5 +1,5 @@
 
-interface DoctorCardProps {
+interface TeamCardProps {
     id?: string
     title: string;
     shortDescription: string;
@@ -7,7 +7,7 @@ interface DoctorCardProps {
     // Add more props as needed
 }
 
-const DoctorCard = ({ id, title, shortDescription: description, imageUrl }: DoctorCardProps) => {
+const TeamCard = ({ id, title, shortDescription: description, imageUrl }: TeamCardProps) => {
 
 
 
@@ -26,4 +26,4 @@ const DoctorCard = ({ id, title, shortDescription: description, imageUrl }: Doct
     )
 }
 
-export default DoctorCard
+export default TeamCard

@@ -67,22 +67,15 @@ const Navbar = () => {
               Services
             </Link>
             <Link
-              to="/doctors"
+              to="/team"
               className={
-                isCurrentTab('/doctors') ? 'font-bold text-white text-lg' : 'transition duration-300 hover:font-bold hover:text-gray-500 hover:text-lg text-lg'
+                isCurrentTab('/team') ? 'font-bold text-white text-lg' : 'transition duration-300 hover:font-bold hover:text-gray-500 hover:text-lg text-lg'
               }
             >
-              Doctors
+              Our Team
             </Link>
 
-            <Link
-              to="/nurses"
-              className={
-                isCurrentTab('/nurses') ? 'font-bold text-white text-lg' : 'transition duration-300 hover:font-bold hover:text-gray-500 hover:text-lg text-lg'
-              }
-            >
-              Nurses
-            </Link>
+
 
             <Link
               to="/departments"
