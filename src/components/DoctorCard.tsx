@@ -1,7 +1,7 @@
 
 import Button from '../components/Button'
 
-interface doctorCardProps {
+interface DoctorCardProps {
     id?: string
     title: string;
     shortDescription: string;
@@ -9,11 +9,9 @@ interface doctorCardProps {
     // Add more props as needed
 }
 
-const DoctorCard = ({ id, title, shortDescription: description, imageUrl }: doctorCardProps) => {
+const DoctorCard = ({ id, title, shortDescription: description, imageUrl }: DoctorCardProps) => {
 
-    const eventLister = () => {
-        alert('click')
-    }
+
 
     return (
         <div className=" text-white flex shadow-xl shadow-slate-900 relative rounded-2xl overflow-hidden bg-slate-700">
@@ -23,13 +21,7 @@ const DoctorCard = ({ id, title, shortDescription: description, imageUrl }: doct
                 <p>{description}</p>
 
                 <div className="flex items-center justify-center mt-3">
-                    <Button
-                        text={'Read More'}
-                        textColor={'text-black'}
-                        color={'bg-cyan-300'}
-                        hoverColor={'bg-cyan-500'}
-                        onClick={eventLister}
-                    />
+
                 </div>
             </div>
         </div>
