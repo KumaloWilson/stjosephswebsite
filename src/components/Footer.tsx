@@ -43,6 +43,9 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <div className="mt-16 text-center">
+          <p>&copy; 2024 St Joseph's Mission Hospital. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   );
