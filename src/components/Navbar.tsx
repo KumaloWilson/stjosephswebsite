@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logoImg from '../assets/logo.png';
+import AdminDashboard from '../pages/AdminDashboard';
 
 const Navbar = () => {
   const location = useLocation();
@@ -25,8 +26,10 @@ const Navbar = () => {
           >
 
             <div className='flex items-center'>
-              <img src={logoImg} alt="logo" className="w-20 h-20 mr-4" />
-              <h1 className="text-2xl font-bold mb-2 text-white">St Joseph's Mission Hosp</h1>
+              <div className='bg-white mr-4 p-2 rounded-lg'>
+                <img src={logoImg} alt="logo" className="w-20 h-20" />
+              </div>
+              <h1 className="text-2xl font-bold mb-2 text-white">St Joseph's Mission Hospital</h1>
             </div>
           </Link>
 
@@ -80,10 +83,10 @@ const Navbar = () => {
             <Link
               to="/departments"
               className={
-                isCurrentTab('/departments') ? 'font-bold text-white text-lg' : 'transition duration-300 hover:font-bold hover:text-gray-500 hover:text-lg text-lg'
+                isCurrentTab('/admindashboard') ? 'font-bold text-white text-lg' : 'transition duration-300 hover:font-bold hover:text-gray-500 hover:text-lg text-lg'
               }
             >
-              Departments
+              AdminDashboard
             </Link>
 
             <Link
@@ -104,7 +107,7 @@ const Navbar = () => {
             <Link onClick={toggleMenu} to="/about" className="block py-2">About</Link>
             <Link onClick={toggleMenu} to="/services" className="block py-2">Services</Link>
             <Link onClick={toggleMenu} to="/team" className="block py-2">Doctors</Link>
-            <Link onClick={toggleMenu} to="/departments" className="block py-2">Departments</Link>
+            <Link onClick={toggleMenu} to="/admindashboard" className="block py-2">Departments</Link>
             <Link onClick={toggleMenu} to="/contact" className="block py-2">Contact</Link>
           </div>
         )}

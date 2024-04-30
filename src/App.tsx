@@ -6,7 +6,7 @@ import AboutUs from "./pages/AboutUs"
 import Teams from "./pages/Teams"
 import ContactMe from "./pages/ContactMe"
 import Services from "./pages/Services"
-import Departments from "./pages/Departments"
+import AdminDashboard from "./pages/AdminDashboard"
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/team" element={<Teams />} />
-          <Route path="/departments" element={<Departments />} />
+          <Route path="/admindashboard" element={<AdminDashboard />} />
           <Route path="/contact" element={<ContactMe />} />
         </Routes>
       </div>
